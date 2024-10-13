@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Eating</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Список блюд -->
+    <div class="container dish-list">
+        <h2>Список блюд</h2>
+        <div id="dish-list"></div>
+    </div>
+
+    <!-- Форма добавления блюда -->
+    <div class="container form-container">
+        <h2>Добавить блюдо</h2>
+        <form id="dish-form">
+            <label for="name">Название:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="calories">Калории:</label><br>
+            <input type="number" id="calories" name="calories" required><br><br>
+            <label for="proteins">Белки:</label><br>
+            <input type="number" id="proteins" name="proteins" required><br><br>
+            <label for="fats">Жиры:</label><br>
+            <input type="number" id="fats" name="fats" required><br><br>
+            <label for="carbohydrates">Углеводы:</label><br>
+            <input type="number" id="carbohydrates" name="carbohydrates" required><br><br>
+            <button type="submit">Добавить блюдо</button>
+        </form>
+    </div>
+
+    <!-- Сводка по приему пищи -->
+    <div class="container meal-summary">
+        <h2>Приём пищи</h2>
+        <div id="meal-summary-items"></div>
+        <div class="meal-summary-total">
+            Итого: <span id="total-kbju">0</span> КБЖУ
+        </div>
+        <button id="submit-meal">Отправить приём пищи</button>
+    </div>
+
+    <!-- Кнопка статистики -->
+    <div>
+        <a href="statistics.html"><button>Статистика</button></a>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
